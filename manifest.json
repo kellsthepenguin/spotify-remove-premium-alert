@@ -1,0 +1,21 @@
+{
+    "author": "jwkim101201",
+    "manifest_version": 2,
+    "name": "Spotify Remove Premium Alert",
+    "short_name": "SRPA",
+    "description": "remove spotify premium alert",
+    "version": "0.0.1",
+    "version_name": "alpha",
+
+    "permissions": [
+        "tabs",
+        "https://open.spotify.com/"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://open.spotify.com/"],
+            "js": ["script.js"]
+        }
+    ]
+}
